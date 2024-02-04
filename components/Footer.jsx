@@ -7,14 +7,14 @@ import { footerVariants } from '@/lib/Motion';
 // Footer component
 const Footer = () => {
   return (
-    <div className='md:pt-20 pt-16 mt-5 m-auto w-full md:w-3/4 flex justify-center items-center'>
+    <div className='md:pt-20 pt-16 mt-5 m-auto w-full px-5 md:px-0 md:w-3/4 flex justify-center items-center overflow-hidden'>
       <div className="flex flex-col sm:flex-row items-center justify-center sm:gap-4 md:gap-7 lg:0">
         {/* First Footer Section */}
         <motion.footer
           variants={footerVariants}
           initial="hidden"
           whileInView="show"
-          className="flex flex-col w-1/2"
+          className="flex flex-col w-full md:w-1/2"
         >
           <div className="font-serif font-medium text-[65px] lg:text-[70px] sm:text-[50px] md:[60px]">
             Let’s Get in Touch
@@ -34,21 +34,25 @@ const Footer = () => {
           variants={footerVariants}
           initial="hidden"
           whileInView="show"
-          className="flex flex-col gap-7 pt-20"
+          className="flex flex-col gap-7 pt-20 w-full md:w-2/5"
         >
           <div>
-            <div className='underline underline-offset-8 left-0'>What’s your full name?</div>
+            <div>What’s your full name?</div>
+            <hr className='border-t-2 border-solid border-primary '/>
           </div>
           <div>
-            <div className='underline underline-offset-8'>What’s your email address?</div>
+            <div >What’s your email address?</div>
+            <hr className='border-t-2 border-solid border-primary '/>
           </div>
           <div>
-            <div className='underline underline-offset-8'>Your phone no</div>
+            <div>Your phone no</div>
+            <hr className='border-t-2 border-solid border-primary '/>
           </div>
           <div>
-            <div className='underline underline-offset-8'>Tell us about your project</div>
+            <div>Tell us about your project</div>
+            <hr className='border-t-2 border-solid border-primary '/>
           </div>
-          <Button className="text-sm">Send Now</Button>
+          <Button className="w-[130px]">Send Now</Button>
         </motion.footer>
       </div>
     </div>
