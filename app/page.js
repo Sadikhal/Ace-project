@@ -22,7 +22,8 @@ export default function Home() {
             <div className="flex flex-col w-full h-3/4">
               <div className="w-7/10 overflow-hidden aspect-square rounded-md relative">
                 <Image
-                  
+                  width="100"
+                  height="100"
                   className="object-cover w-full group-hover:scale-110 transition"
                   src={item.img}
                   alt="listing"
