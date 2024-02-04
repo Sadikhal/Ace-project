@@ -9,7 +9,8 @@ import { footerVariants } from '@/lib/Motion';
 export default function Home() {
   return (
     <Container>
-      <div className="xl:px-20 md:px-12 sm:px-2 px-3 pt-40 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-3">
+      <div className="xl:px-20 md:px-12 sm:px-2 px-3 pt-40 flex justify-around flex-wrap gap-2
+       ">
         {Data.map((item) => (
           <motion.nav 
             variants={footerVariants}
