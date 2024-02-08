@@ -7,25 +7,27 @@ import { footerVariants } from '@/lib/Motion';
 // Footer component
 const Footer = () => {
   return (
-    <div className='md:pt-20 pt-16 mt-5 m-auto w-full px-5 md:px-0 md:w-3/4 flex justify-center items-center overflow-hidden'>
-      <div className="flex flex-col sm:flex-row items-center justify-center sm:gap-4 md:gap-7 lg:0">
+    <div className='md:pt-18 lg:pt-20 pt-16  w-full sm:px-8 px-6    flex justify-center items-center'>
+      <div className="flex flex-col md:flex-row md:justify-between items-center h-screen md:gap-10 gap-20 lg:w-[90%]">
         {/* First Footer Section */}
         <motion.footer
           variants={footerVariants}
           initial="hidden"
           whileInView="show"
-          className="flex flex-col w-full md:w-1/2"
+          className="flex flex-col w-full  md:w-[58%] justify-center items-start gap-10"
         >
-          <div className="font-serif font-medium text-[65px] lg:text-[70px] sm:text-[50px] md:[60px]">
-            Let’s Get in Touch
-          </div>
           <div>
-            <div className='lg:text-[25px] md:[23px] text-[20px]'>+91 7356140099</div>
-            <div className='lg:text-[23px]md:[21px] text-[20px]'>info@aceassured.com</div>
+          <div className="font-newyork font-[496px] text-[80px] lg:text-[100px] sm:text-[80px] md:[90px]lg:leading-[150px] sm:leading-[120px] md:leading-[130px] leading-[130px]   ">
+            Let’s Get In Touch
           </div>
-          <div>
-            <div className='md:text-[27px] font-medium text-[20px] pt-5'>location</div>
-            <div className='md:text-[15px] sm:text-[12px]'>No 4, Amman Nagar, Phase 3, Villankurichi, Coimbatore, Tamil Nadu India- 641035</div>
+          <div className='flex flex-col pt-4 '>
+            <div className='lg:text-[40px] lg:leading-[49px]  md:text-[35px] md:leading-[38.4px] text-[30px] leading-[35.4px] font-newyork font-[400px] '>+91 7356140099</div>
+            <div className='lg:text-[38px] lg:leading-[45px]  md:text-[35px] md:leading-[38.4px] text-[30px] leading-[35.4px] font-newyork font-normal'>info@aceassured.com</div>
+            </div>
+          </div>
+          <div className='flex flex-col  '>
+            <div className='text-[28px] leading-[43px] font-newyork font-semibold'>LOCATION</div>
+            <div className='text-[24px] leading-[43px] font-newyork font-normal '>No 4, Amman Nagar, Phase 3, Villankurichi, Coimbatore, Tamil Nadu India- 641035</div>
           </div>
         </motion.footer>
 
@@ -34,25 +36,28 @@ const Footer = () => {
           variants={footerVariants}
           initial="hidden"
           whileInView="show"
-          className="flex flex-col gap-7 pt-20 w-full md:w-2/5"
+          className="flex flex-col gap-12  w-full   md:w-[52%]  relative mt-12 md:mt-4 lg:mt-6"
         >
+          <div className='flex flex-col gap-11 absolute -top-2 w-full'>
           <div>
-            <div>What’s your full name?</div>
-            <hr className='border-t-2 border-solid border-primary '/>
+            <div className='font-newyork text-[20px] leading-[25px] font-normal'>What’s your full name?</div>
+            <hr className='border-t-1 border-solid border-primary '/>
           </div>
           <div>
-            <div >What’s your email address?</div>
-            <hr className='border-t-2 border-solid border-primary '/>
+            <div className='font-newyork text-[20px] leading-[25px] font-normal'>What’s your email address?</div>
+            <hr className='border-t-1 border-solid border-primary '/>
           </div>
           <div>
-            <div>Your phone no</div>
-            <hr className='border-t-2 border-solid border-primary '/>
+            <div className='font-newyork text-[20px] leading-[25px] font-normal'>Your phone no</div>
+            <hr className='border-t-1 border-solid border-primary '/>
           </div>
           <div>
-            <div>Tell us about your project</div>
-            <hr className='border-t-2 border-solid border-primary '/>
+            <div className='font-newyork text-[20px] leading-[25px] font-normal '>Tell us about your project</div>
+            <hr className='border-t-1 border-solid border-primary '/>
           </div>
-          <Button className="w-[130px]">Send Now</Button>
+          <Button className="w-[150px] text-[16px] leading-[16px] font-semibold">Send Now</Button>
+          </div>
+          
         </motion.footer>
       </div>
     </div>

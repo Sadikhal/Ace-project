@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
  
+* {
+ 
+  font-family: "New York", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding:0;
+ 
+}
+
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

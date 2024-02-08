@@ -14,9 +14,18 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+       
       },
     },
+
+  
     extend: {
+      fontFamily: {
+        poppins: ["var(--poppins)"], 
+        newyork: ["var(--newyork)"], 
+        newyorklg: ["var(--newyorkLg)"], 
+        
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +60,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        
       },
       borderRadius: {
         lg: "var(--radius)",

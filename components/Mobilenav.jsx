@@ -21,7 +21,7 @@ const Mobilenav = ({ routes }) => {
                 whileInView="show"
               >
                 <Link href={route.href} passHref>
-                  <div className="text-[22px] font-serif whitespace-nowrap">
+                  <div className="text-[22px] font-newyork whitespace-nowrap">
                     {route.label}
                   </div>
                 </Link>

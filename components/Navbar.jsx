@@ -19,7 +19,7 @@ const Navbar = () => {
     { label: 'Company', href: '/company' },
     {
       label: (
-        <div className='flex items-end'>
+        <div className='flex items-end font-newyork text-[20px] leading-[30px]'>
           Contact Us <ArrowUpRight className='pb-1' />
         </div>
       ),
@@ -41,30 +41,31 @@ const Navbar = () => {
           variants={navVariants}
           initial='hidden'
           whileInView='show'
-          className='flex flex-row items-center justify-between'
+          className='flex flex-row items-center justify-between pt-3'
         >
 
           {/* Logo section */}
-          <div className='sm:p-2 sm:pl-1 lg:pl-10 md:pl-6 flex text-center'>
+          <div className='sm:p-2 sm:pl-4 lg:pl-6 md:pl-3 flex text-center'>
             {theme === 'dark' ? (
-              <Image className='cursor-pointer' src='/ace.png' height='100' width='100' alt='logo' />
+              <img className='cursor-pointer' src='/ace.png' height='100' width='100' alt='logo' />
             ) : (
-              <Image className='cursor-pointer' src='/icon.png' height='100' width='100' alt='logo' />
+              <img className='cursor-pointer' src='/logo.png' height='100' width='100' alt='logo' />
             )}
           </div>
 
           {/* Navigation links and toggle section */}
           <div className='flex gap-3 items-center pr-6'>
             {/* Desktop navigation */}
-            <div className='hidden sm:flex flex-row items-center sm:gap-4 md:gap-6 lg:gap-11 pr-7'>
+            <div className='hidden md:flex flex-row items-center sm:gap-4 md:gap-6 lg:gap-11 pr-7'>
               {routes.map((route) => (
-                <Link key={route.href} href={route.href} className='text-[18px] md:text-[20px] font-serif whitespace-nowrap'>
+                <Link key={route.href} href={route.href} className='text-[18px] md:text-[20px] 
+                font-newyork font-500 whitespace-nowrap leading-[30px]'>
                   {route.label}
                 </Link>
               ))}
             </div>
             {/* Mobile navigation */}
-            <div className='sm:hidden'>
+            <div className='md:hidden'>
               <Mobilenav routes={routes} />
             </div>
             {/* Dark mode toggle */}

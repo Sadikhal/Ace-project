@@ -5,19 +5,19 @@ export const Data = [
    "id":1,
   "heading":"How Digital Solutions Can Transform Your Businesses?",
   "date":"December 11,2023",
-  "img": "/img1.png"
+  "img": "/pic1.png"
 },
 {  
    "id":2,
   "heading":"5 Ways Your Business is Already Transforming Digitally",
   "date":"December 26,2023",
-  "img": "/img2.png"
+  "img": "/pic2.png"
 },
 {
   "id":3,
   "heading":"How Digital Solutions Can Transform Your Businesses?",
   "date":"December 28,2023",
-  "img": "/img3.png"
+  "img": "/pic3.png"
 },
 {
   "id":4,
